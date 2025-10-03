@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="hero">
+    <h1>Flux Security Lab</h1>
+    <center>
+        <strong>Flux Security Lab</strong> جایی برای کشف دنیای امنیت سایبری است.
+        ما تحلیل تهدیدات، ابزارهای کاربردی و منابع آموزشی را در یک محیط حرفه‌ای و مدرن گردآوری می‌کنیم تا همیشه یک قدم
+        جلوتر باشید.
+    </center>
+    <br>
+    <div class="hero-actions">
+        <a href="{% url 'news' %}" class="btn-primary">شروع کنید</a>
+        <a href="{% url 'about_us' %}" class="btn-secondary">بیشتر بدانید</a>
+    </div>
+</section>
+
+
+<section class="featured-grid">
+
+    <div class="featured-card">
+        <div class="card-icon">🕵️‍♂️</div>
+        <h3>تحلیل تهدیدات</h3>
+        <p>بررسی عمیق آخرین حملات سایبری و روش‌های دفاعی نوین.</p>
+    </div>
+
+    <div class="featured-card">
+        <div class="card-icon">📚</div>
+        <h3>آموزش و یادگیری</h3>
+        <p>دوره‌ها و منابع اختصاصی برای علاقه‌مندان به امنیت سایبری.</p>
+    </div>
+
+    <div class="featured-card">
+        <div class="card-icon">🛠️</div>
+        <h3>ابزارهای اختصاصی</h3>
+        <p>معرفی و توسعه ابزارهای امنیتی کاربردی و متن‌باز.</p>
+    </div>
+
+    <div class="featured-card">
+        <div class="card-icon">🩸</div>
+        <h3>لبه تیغ بودن</h3>
+        <p>ارائه اخبار در سریع ترین زمان</p>
+    </div>
+
+</section>
+{% endblock content %}

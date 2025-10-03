@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %} جزئیات خبر {% endblock %}
+{% block content %}
+<b>
+    لینک در سایت اصلی : <strong><a href={{ news.url  }}> {{ news.url }} </a></strong>
+</b>
+<main>
+    {{ news.content|safe }}
+</main>
+{% endblock content %}
